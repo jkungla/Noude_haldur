@@ -1,0 +1,49 @@
+<%- include('header') -%>
+<!--breadcrumbs-->
+<div id="content-header">
+    <div id="breadcrumb"> <a href="/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Esileht</a> <a href="/claims" class="current"><%= title %></a> </div>
+    <h1><%= title %></h1>
+</div>
+<!--End-breadcrumbs-->
+
+<!--Action boxes-->
+<div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="widget-box">
+                <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+                    <h5>Data table</h5>
+                </div>
+                <div class="widget-content nopadding">
+                     <table class="table table-bordered data-table">
+                        <thead>
+                        <tr>
+                            <th style="cursor: pointer;">ID</th>
+                            <th style="cursor: pointer;">Viitenumber</th>
+                            <th style="cursor: pointer;">Tegeleja</th>
+                            <th style="cursor: pointer;">SUMMA</th>
+                            <th style="cursor: pointer;">JÄÄK</th>
+                            <th style="cursor: pointer;">Action</th>
+                        </tr>
+                        </thead>
+                         <!--<tbody>-->
+                         <!--<%# claims.forEach(function(claim) { %>-->
+                         <!--<tr class="claim" id="<%#= claim.id %>">-->
+                             <!--<td><%#= claim.viitenumber %></td>-->
+                             <!--<td><%#= claim.tegeleja %></td>-->
+                             <!--<td><%#= claim.summa %></td>-->
+                             <!--<td class="center"><%#= claim.jaak %></td>-->
+                         <!--</tr>-->
+                         <!--<%# }); %>-->
+                         <!--</tbody>-->
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%- include('footer') -%>

@@ -1,0 +1,145 @@
+<%- include('header') -%>
+<!--breadcrumbs-->
+<div id="content-header">
+    <div id="breadcrumb"> <a href="/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Esileht</a> <a href="/claims" class="tip-bottom">Claims</a> <a href="/claims/<%= claim.viitenumber %>" class="current"><%= claim.viitenumber %></a> </div>
+    <h1>Nõue: <%= claim.viitenumber %></h1>
+</div>
+<!--End-breadcrumbs-->
+
+<!--Action boxes-->
+<div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="widget-box">
+                <div class="widget-title">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#tab1">Nõude üldandmed</a></li>
+                        <li><a data-toggle="tab" href="#tab2">Maksegraafikud</a></li>
+                        <li><a data-toggle="tab" href="#tab3">Laekumised</a></li>
+                    </ul>
+                </div>
+                <div class="widget-content tab-content">
+                    <div id="tab1" class="tab-pane active">
+
+                        <div class="span6">
+                            <div class="widget-box">
+                                <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+                                    <h5>Form Elements</h5>
+                                </div>
+                                <div class="widget-content nopadding">
+                                    <form action="#" method="get" class="form-horizontal">
+                                        <div class="control-group">
+                                            <label class="control-label">Tegeleja</label>
+                                            <div class="controls">
+                                                <select >
+                                                    <option>First option</option>
+                                                    <option>Second option</option>
+                                                    <option>Third option</option>
+                                                    <option>Fourth option</option>
+                                                    <option>Fifth option</option>
+                                                    <option>Sixth option</option>
+                                                    <option>Seventh option</option>
+                                                    <option>Eighth option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label">Multiple Select input</label>
+                                            <div class="controls">
+                                                <select multiple >
+                                                    <option>First option</option>
+                                                    <option selected>Second option</option>
+                                                    <option>Third option</option>
+                                                    <option>Fourth option</option>
+                                                    <option>Fifth option</option>
+                                                    <option>Sixth option</option>
+                                                    <option>Seventh option</option>
+                                                    <option>Eighth option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label">Radio inputs</label>
+                                            <div class="controls">
+                                                <label>
+                                                    <input type="radio" name="radios" />
+                                                    First One</label>
+                                                <label>
+                                                    <input type="radio" name="radios" />
+                                                    Second One</label>
+                                                <label>
+                                                    <input type="radio" name="radios" />
+                                                    Third One</label>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label">Checkboxes</label>
+                                            <div class="controls">
+                                                <label>
+                                                    <input type="checkbox" name="radios" />
+                                                    First One</label>
+                                                <label>
+                                                    <input type="checkbox" name="radios" />
+                                                    Second One</label>
+                                                <label>
+                                                    <input type="checkbox" name="radios" />
+                                                    Third One</label>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label for="checkboxes" class="control-label">Data Toggle checkbox</label>
+                                            <div class="controls">
+                                                <div data-toggle="buttons-checkbox" class="btn-group">
+                                                    <button class="btn btn-primary" type="button">Left</button>
+                                                    <button class="btn btn-primary" type="button">Middle</button>
+                                                    <button class="btn btn-primary" type="button">Right</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label for="checkboxes" class="control-label">Data Radio button</label>
+                                            <div class="controls">
+                                                <div data-toggle="buttons-radio" class="btn-group">
+                                                    <button class="btn btn-primary" type="button">Left</button>
+                                                    <button class="btn btn-primary" type="button">Middle</button>
+                                                    <button class="btn btn-primary" type="button">Right</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label">File upload input</label>
+                                            <div class="controls">
+                                                <input type="file" />
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label">Disabled Input</label>
+                                            <div class="controls">
+                                                <input type="text" placeholder="You can't type anything…" disabled="" class="span11">
+                                            </div>
+                                        </div>
+                                        <div class="form-actions">
+                                            <button type="submit" class="btn btn-success">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div id="tab2" class="tab-pane">
+                        <p> waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end. </p>
+                    </div>
+                    <div id="tab3" class="tab-pane">
+                        <p>full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%- include('footer') -%>
